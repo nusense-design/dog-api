@@ -30,7 +30,6 @@ async function loadByBreed(value) {
    if (value != "choose dog breed") {
       const response = await fetch(`https://dog.ceo/api/breed/${value}/images`);
       const data = await response.json();
-      console.log(data);
       createSlide(data.message);
    }
 }
